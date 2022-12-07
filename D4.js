@@ -286,7 +286,8 @@ let toBeRemoved;
 for (let ic = 0; ic < characters.length; ic++) {
   for (let ifc = 0; ifc < femaleCharacters.length; ifc++) {
     if (characters[ic] === femaleCharacters[ifc].name) {
-      delete characters[ic];
+      //delete characters[ic];  ///così svuota l'item
+      characters.splice(ic, 1); //così rimuove l'item senza lasciarla vuota
     }
   }
 }
