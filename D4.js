@@ -233,7 +233,7 @@ switch (true) {
   case massa < 500:
     console.log("Ship is under loaded");
     break;
-  case massa == 500:
+  case massa === 500:
     console.log("Ship is half loaded");
     break;
   case massa > 500 && massa <= 700:
